@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#   Institut für Wetter- und Klimakommunikation GmbH / Qmet 
-#   O. Maywald <maywald@klimagipfel.de>
 
 #   This should install CDO with grib2, netcdf and HDF5 support. Note that the binaries are in /opt/cdo-install/bin. 
 #   For further information look:
