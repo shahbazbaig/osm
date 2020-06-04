@@ -24,3 +24,8 @@ $ docker-machine rm default
 Second: re-create virtual machine with amount of RAM, CPU cores or disk space you want:
 $ docker-machine create -d virtualbox --virtualbox-cpu-count=2 --virtualbox-memory=4096 --virtualbox-disk-size=50000 default
 Restart Docker and the issue if solved.
+
+## Increase disk size
+VBoxManage clonemedium "source.vmdk" "cloned.vdi" --format vdi
+VBoxManage modifymedium "cloned.vdi" --resize 51200
+VBoxManage clonemedium "cloned.vdi" "resized.vmdk" --format vmdk
